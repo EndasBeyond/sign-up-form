@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse.woff2') format('woff2'),
+        url('fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    background-image: url(unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.logo-image {
+    width: 100px;
+}
+
+.norse-text {
+    font-family: 'Norse', sans-serif;
+    font-size: 64px;
+    margin: 0;
+}
+
+img {
+    width: 500px;
+}
+
+.content {
+    flex: 1;
+}
+
+.caption {
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.caption:first-child {
+    margin-top: 64px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 1px 3px #ddd;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 16px 0;
+    gap: 60px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 4px;
+    width: 250px;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0 0 0 1px blue;
+}
+
+button {
+    background-color: #597D48;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    margin: 20px 0 0 20px;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.credit {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+}
